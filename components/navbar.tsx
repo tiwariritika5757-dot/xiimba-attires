@@ -1,0 +1,138 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
+export default function Navbar() {
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const links = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "What We Do", href: "/capabilities" },
+    { name: "Our Fabrics", href: "/products" },
+    { name: "Stock Fabrics", href: "/stock" },
+    { name: "Sustainability", href: "/sustainability" },
+    { name: "Contact Us", href: "/contact" },
+  ];
+
+  return (
+    <header className="fixed top-4 left-0 w-full z-50 flex justify-center px-3">
+
+      {/* CONTAINER */}
+      <div
+        className={`w-full max-w-[1600px] rounded-2xl border transition-all duration-500
+        ${
+          scrolled
+            ? "bg-white/90 border-black/10 backdrop-blur-xl shadow-xl"
+            : "bg-white/80 border-black/10 backdrop-blur-md"
+        }`}
+      >
+
+        <div className="flex items-center justify-between px-4 md:px-8 lg:px-12 h-14 md:h-16">
+
+          {/* LOGO */}
+          <h1 className="text-base md:text-lg lg:text-xl font-heading font-bold tracking-[0.2em]
+          bg-gradient-to-r from-plumStart via-plumMid to-plumEnd 
+          bg-clip-text text-transparent">
+            XIIMBA
+          </h1>
+
+          {/* DESKTOP NAV */}
+          <nav className="hidden lg:block">
+            <ul className="flex items-center gap-6 xl:gap-8 font-heading text-[13px] xl:text-[14px]">
+
+              {links.map((link) => {
+                const isActive = pathname === link.href;
+
+                return (
+                  <li key={link.name} className="relative group">
+
+                    <Link href={link.href} className="relative px-2 py-1 block">
+
+                      {/* TEXT */}
+                      <span
+                        className={`relative z-10 font-semibold transition-all duration-300
+                        bg-gradient-to-r from-plumStart via-plumMid to-plumEnd 
+                        bg-clip-text text-transparent
+                        ${
+                          isActive
+                            ? "opacity-100 scale-105"
+                            : "opacity-80 group-hover:opacity-100 group-hover:scale-105"
+                        }`}
+                      >
+                        {link.name}
+                      </span>
+
+                      {/* UNDERLINE */}
+                      <span
+                        className={`absolute left-0 bottom-0 h-[2px]
+                        bg-gradient-to-r from-plumStart to-plumEnd
+                        transition-all duration-300
+                        ${
+                          isActive
+                            ? "w-full"
+                            : "w-0 group-hover:w-full"
+                        }`}
+                      />
+
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+
+          {/* MOBILE MENU BUTTON */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden flex flex-col gap-[4px]"
+          >
+            <span className="w-6 h-[2px] bg-plumMid"></span>
+            <span className="w-6 h-[2px] bg-plumMid"></span>
+            <span className="w-6 h-[2px] bg-plumMid"></span>
+          </button>
+
+        </div>
+
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="lg:hidden px-6 pb-6 pt-2">
+
+            <ul className="flex flex-col gap-4 text-center font-heading text-sm">
+
+              {links.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block py-2
+                    bg-gradient-to-r from-plumStart via-plumMid to-plumEnd 
+                    bg-clip-text text-transparent font-semibold"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+
+            </ul>
+
+          </div>
+        )}
+
+      </div>
+    </header>
+  );
+}
