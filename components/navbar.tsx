@@ -21,19 +21,19 @@ export default function Navbar() {
   const links = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "What We Do", href: "/capabilities" },
-    { name: "Our Fabrics", href: "/products" },
+    { name: "What We Do", href: "/what-we-do" },
+    { name: "Our Fabrics", href: "/ourfabrics" },
     { name: "Stock Fabrics", href: "/stock" },
     { name: "Sustainability", href: "/sustainability" },
     { name: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <header className="fixed top-4 left-0 w-full z-50 flex justify-center px-3">
+    <header className="fixed top-4 left-0 w-full z-50 flex justify-center px-4 md:px-6">
 
       {/* CONTAINER */}
       <div
-        className={`w-full max-w-[1600px] rounded-2xl border transition-all duration-500
+        className={`w-full max-w-[1200px] mx-auto rounded-2xl border transition-all duration-500
         ${
           scrolled
             ? "bg-white/90 border-black/10 backdrop-blur-xl shadow-xl"
@@ -41,7 +41,7 @@ export default function Navbar() {
         }`}
       >
 
-        <div className="flex items-center justify-between px-4 md:px-8 lg:px-12 h-14 md:h-16">
+        <div className="flex items-center justify-between px-4 md:px-6 lg:px-8 h-14 md:h-16">
 
           {/* LOGO */}
           <h1 className="text-base md:text-lg lg:text-xl font-heading font-bold tracking-[0.2em]
@@ -59,7 +59,6 @@ export default function Navbar() {
 
                 return (
                   <li key={link.name} className="relative group">
-
                     <Link href={link.href} className="relative px-2 py-1 block">
 
                       {/* TEXT */}
@@ -92,6 +91,7 @@ export default function Navbar() {
                   </li>
                 );
               })}
+
             </ul>
           </nav>
 
@@ -110,9 +110,7 @@ export default function Navbar() {
         {/* MOBILE MENU */}
         {menuOpen && (
           <div className="lg:hidden px-6 pb-6 pt-2">
-
             <ul className="flex flex-col gap-4 text-center font-heading text-sm">
-
               {links.map((link) => (
                 <li key={link.name}>
                   <Link
@@ -126,9 +124,7 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-
             </ul>
-
           </div>
         )}
 

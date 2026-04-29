@@ -39,8 +39,8 @@ export default function SustainabilitySection() {
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
             className="mb-6 px-6 py-2 text-[11px] tracking-[0.25em] uppercase 
             bg-white/10 text-white border border-white/20 
             rounded-full backdrop-blur-md"
@@ -50,10 +50,10 @@ export default function SustainabilitySection() {
 
           {/* HEADING */}
           <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+           initial={{ opacity: 1, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
             className="text-5xl md:text-6xl font-heading leading-tight mb-6 text-white"
           >
             Responsible Textile
@@ -65,8 +65,8 @@ export default function SustainabilitySection() {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            viewport={{ once: true }}
             className="text-white/70 text-[15px] leading-relaxed max-w-md"
           >
             At Xiimba, sustainability is embedded across our entire textile value chain — 
@@ -83,11 +83,11 @@ export default function SustainabilitySection() {
               key={i}
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{
                 duration: 0.6,
                 delay: i * 0.15,
               }}
-              viewport={{ once: true }}
               className="relative pl-10"
             >
 

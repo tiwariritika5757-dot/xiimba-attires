@@ -27,19 +27,18 @@ export default function IndustriesSection() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-lightStart py-5 px-6 overflow-hidden">
-
-      {/* 🔥 SOFT BACKGROUND GLOW (TOP) */}
+   <section className="relative bg-gradient-to-b from-white to-lightStart -mt-32 z-20 py-16 px-6 overflow-hidden">
+      {/*  SOFT BACKGROUND GLOW (TOP) */}
       <div className="absolute top-[-150px] left-1/2 -translate-x-1/2 
       w-[700px] h-[700px] bg-gradient-to-r from-accent1 to-accent2 
       opacity-10 blur-[150px] rounded-full" />
 
-      {/* 🔥 SIDE GLOW */}
+      {/* SIDE GLOW */}
       <div className="absolute bottom-[-120px] right-[-80px] 
       w-[400px] h-[400px] bg-plumMid 
       opacity-10 blur-[120px] rounded-full" />
 
-      {/* 🔥 VERY SUBTLE RADIAL TEXTURE */}
+      {/*  VERY SUBTLE RADIAL TEXTURE */}
       <div className="absolute inset-0 opacity-[0.03] 
       bg-[radial-gradient(circle_at_20%_30%,#000_1px,transparent_1px)] 
       [background-size:30px_30px]" />

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        base: "#2d2d2d",
+        
 
         /* LIGHT BACKGROUND */
         lightStart: "#fff7fb",
