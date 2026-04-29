@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -43,12 +43,16 @@ export default function Navbar() {
 
         <div className="flex items-center justify-between px-4 md:px-6 lg:px-8 h-14 md:h-16">
 
-          {/* LOGO */}
-          <h1 className="text-base md:text-lg lg:text-xl font-heading font-bold tracking-[0.2em]
-          bg-gradient-to-r from-plumStart via-plumMid to-plumEnd 
-          bg-clip-text text-transparent">
-            XIIMBA
-          </h1>
+        <Link href="/" className="flex items-center">
+  <Image
+    src="/image/logo.png"
+    alt="Xiimba Logo"
+    width={160}
+    height={60}
+    priority
+    className="h-10 md:h-12 w-auto object-contain"
+  />
+</Link>
 
           {/* DESKTOP NAV */}
           <nav className="hidden lg:block">
