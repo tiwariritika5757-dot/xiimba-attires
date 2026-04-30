@@ -10,13 +10,13 @@ const slides = [
     desc: "Born in Ichalkaranji, we blend traditional weaving expertise with modern textile intelligence to deliver scalable, high-quality fabric solutions.",
   },
   {
-    image: "/image/fabric2.webp",
+    image: "/image/banner1.webp",
     subtitle: "Integrated Textile Solutions",
     title: "From Yarn To\nFinished Fabric",
     desc: "Advanced weaving, processing, and finishing — all under one ecosystem designed for consistency, efficiency, and global standards.",
   },
   {
-    image: "/image/22.webp",
+    image: "/image/banner3.webp",
     subtitle: "Global Fabric Partner",
     title: "Engineered For Brands.\nBuilt For Scale.",
     desc: "From cotton to blends, dyed to finished fabrics — we support fashion and lifestyle brands with customization and bulk production.",

@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <Link href="/" className="flex items-center">
   <Image
-    src="/image/logo.png"
+    src="/image/logo1.png"
     alt="Xiimba Logo"
     width={160}
     height={60}

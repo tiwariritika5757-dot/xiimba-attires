@@ -7,22 +7,22 @@ export default function ImpactSection() {
     {
       title: "Woven Fabrics",
       desc: "Cotton, polyester blends, viscose and custom weave developments.",
-      img: "/image/fabric.webp",
+      img: "/image/woven-fabric.webp",
     },
     {
       title: "Processed Fabrics",
       desc: "Dyed, printed and finished textiles with high precision.",
-      img: "/image/fabric2.webp",
+      img: "/image/processed-fabrics.webp",
     },
     {
       title: "Custom Development",
       desc: "Tailored fabric solutions for modern fashion brands.",
-      img: "/image/22.webp",
+      img: "/image/custom-development.webp",
     },
     {
       title: "Bulk Production",
       desc: "Scalable manufacturing for domestic and export markets.",
-      img: "/image/fabric.webp",
+      img: "/image/banner.webp",
     },
   ];
 
