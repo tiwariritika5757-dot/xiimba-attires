@@ -27,7 +27,6 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3 text-sm text-charcoal/70">
-
               {[
                 "Home",
                 "About Us",
@@ -40,7 +39,6 @@ export default function Footer() {
                   {item}
                 </li>
               ))}
-
             </ul>
           </div>
 
@@ -51,11 +49,11 @@ export default function Footer() {
             </h3>
 
             <p className="text-sm text-charcoal/70 leading-relaxed">
-              Plot No 14/15, Sector C,
+              B-32, 4th Floor, Sector -2,
               <br />
-              PIE Yadrav, Hatkanangle,
+              Noida – 201301,
               <br />
-              Maharashtra – 416115, India
+              Uttar Pradesh, India
             </p>
 
             <p className="text-sm text-charcoal/70 mt-4">

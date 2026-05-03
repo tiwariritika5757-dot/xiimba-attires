@@ -8,7 +8,7 @@ export default function WhatWeDoHero() {
 
       {/* BACKGROUND */}
       <img
-        src="/image/fabric5.webp"
+        src="/image/what-we-do-hero.webp"
         alt="What We Do"
         className="absolute inset-0 w-full h-full object-cover scale-105"
       />

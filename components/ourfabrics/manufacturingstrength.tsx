@@ -7,22 +7,22 @@ const strengths = [
   {
     title: "Advanced Weaving Infrastructure",
     desc: "Modern looms and machinery ensuring precision and high production efficiency.",
-    image: "/image/weaving.webp",
+    image: "/image/advanced-weaving-infrastructure.webp",
   },
   {
     title: "Integrated Processing Units",
     desc: "Seamless dyeing, printing, and finishing capabilities under one ecosystem.",
-    image: "/image/processing.webp",
+    image: "/image/integrated-processing-units.webp",
   },
   {
-    title: "Strong Supply Chain",
+    title: "/image/strong-supply-chain.webp",
     desc: "Reliable vendor network supporting consistent material sourcing and delivery.",
-    image: "/image/supply.webp",
+    image: "/image/strong-supply-chain.webp",
   },
   {
     title: "Quality Control Systems",
     desc: "Strict inspection processes aligned with global textile standards.",
-    image: "/image/quality.webp",
+    image: "/image/quality-control-systems.webp",
   },
 ];
 

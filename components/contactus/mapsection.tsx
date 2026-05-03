@@ -17,7 +17,7 @@ export default function ContactMap() {
           className="rounded-2xl overflow-hidden shadow-md"
         >
           <iframe
-            src="https://www.google.com/maps?q=Ichalkaranji,Maharashtra&output=embed"
+            src="https://www.google.com/maps?q=B-32,4th Floor,Sector-2,Noida,201301&output=embed"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -42,12 +42,15 @@ export default function ContactMap() {
           </h3>
 
           <p className="text-sm text-gray-600 leading-relaxed mb-3">
-            Plot No 14/15, Sector C, Taluka Shirol, PIE Yadrav,  
-            Hatkanangle, Maharashtra – 416115
+            B-32, 4th Floor, Sector -2,
+            <br />
+            Noida – 201301,
+            <br />
+            Uttar Pradesh, India
           </p>
 
           <a
-            href="https://www.google.com/maps"
+            href="https://www.google.com/maps?q=B-32,4th Floor,Sector-2,Noida,201301"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-plumMid font-medium hover:underline"

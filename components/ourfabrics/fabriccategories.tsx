@@ -6,39 +6,39 @@ import { useState } from "react";
 const categories = [
   {
     title: "Woven Fabrics",
-    images: ["/image/fabric1.webp", "/image/fabric2.webp"],
+    images: ["/image/woven.webp", "/image/woven1.webp"],
   },
   {
     title: "Cotton Fabrics",
-    images: ["/image/fabric3.webp", "/image/fabric4.webp"],
+    images: ["/image/cotton.webp", "/image/cotton1.webp"],
   },
   {
     title: "Polyester Blends",
-    images: ["/image/fabric5.webp", "/image/fabric6.webp"],
+    images: ["/image/Polyester.webp", "/image/Polyester1.webp"],
   },
   {
     title: "Viscose & Blends",
-    images: ["/image/fabric7.webp", "/image/fabric8.webp"],
+    images: ["/image/Viscose.webp", "/image/Viscose1.webp"],
   },
   {
     title: "Custom Weave Developments",
-    images: ["/image/fabric9.webp", "/image/fabric10.webp"],
+    images: ["/image/custom.webp", "/image/custom1.webp"],
   },
   {
     title: "Processed Fabrics",
-    images: ["/image/fabric11.webp", "/image/fabric12.webp"],
+    images: ["/image/Processed.webp", "/image/Processed1.webp"],
   },
   {
     title: "Dyed Fabrics",
-    images: ["/image/fabric13.webp", "/image/fabric14.webp"],
+    images: ["/image/dyed.webp", "/image/dyed1.webp"],
   },
   {
     title: "Printed Fabrics",
-    images: ["/image/fabric15.webp", "/image/fabric16.webp"],
+    images: ["/image/printed.webp", "/image/printed1.webp"],
   },
   {
     title: "Finished & Treated",
-    images: ["/image/fabric17.webp", "/image/fabric18.webp"],
+    images: ["/image/Finished.webp", "/image/Finished1.webp"],
   },
 ];
 

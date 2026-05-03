@@ -100,7 +100,7 @@ export default function CustomDevelopment() {
 
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="/image/fabric4.webp"
+              src="/image/custom-development1.webp"
               alt="Custom Fabric Development"
               className="w-full h-[500px] object-cover"
             />

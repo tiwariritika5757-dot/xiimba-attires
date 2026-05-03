@@ -6,7 +6,7 @@ const info = [
   {
     title: "Address",
     content:
-      "Plot No 14/15, Sector C, Taluka Shirol, PIE Yadrav, Hatkanangle, Maharashtra – 416115, India",
+      "B-32, 4th Floor, Sector -2, Noida. 201301. U.P.",
     icon: "📍",
   },
   {

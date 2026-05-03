@@ -8,7 +8,7 @@ export default function AboutHero() {
 
       {/* BACKGROUND */}
       <img
-        src="/image/fabric4.webp"
+        src="/image/about-us-hero.webp"
         alt="Xiimba Textile Manufacturing"
         className="absolute inset-0 w-full h-full object-cover scale-105"
       />

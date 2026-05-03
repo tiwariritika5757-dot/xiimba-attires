@@ -83,7 +83,7 @@ export default function FabricsHero() {
 
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="/image/fabric5.webp"
+              src="/image/hero-fabric.webp"
               alt="Fabric"
               className="w-full h-[500px] object-cover"
             />
